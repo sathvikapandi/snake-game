@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Java Quiz</h1>
+
+    <div id="start-screen">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" style="display:none;">
+      <p><strong>User:</strong> <span id="display-name"></span></p>
+      <p><strong>Time Left:</strong> <span id="timer">15</span> sec</p>
+      <div id="question"></div>
+      <div id="options"></div>
+      <p id="explanation"></p>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="result-screen" style="display:none;">
+      <h2>Quiz Over!</h2>
+      <p id="final-score"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
